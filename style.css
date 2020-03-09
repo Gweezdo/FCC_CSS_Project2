@@ -1,0 +1,190 @@
+body {
+    font-family: helvetica, monospace;
+    background: #ed946d;
+  }
+  
+  #description {
+    background: white;
+    text-align: center;
+    position: relative;
+    padding: 5px 5% 5px 5%;
+    font-size: 1.1em;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  
+  .container {
+    height: 100%;
+    display: flex;
+    background: white;
+    flex-wrap: wrap;
+    align-content: start;
+    margin: 0px 15% 50px 15%;
+  }
+  
+  .item1 {
+  /*   background-color: dodgerblue; */
+    width: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 1.1em;
+  /*   margin: 5px; */
+    padding: 15px 20px 10px;
+  /*   border: solid 0.5pt; */
+  }
+  
+  .item2 {
+  /*   background-color: orangered; */
+    width: 50%;
+    text-align: start;
+    justify-content: center;
+  /*   margin: 5px; */
+    box-sizing: border-box;
+    padding: 10px 0px 10px;
+    font-size: 1.1em;
+  /*   border: solid 0.5pt; */
+  }
+  
+  .item3 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  /*   margin: 5px; */
+    box-sizing: border-box;
+    padding: 0px 0px 0px;
+    font-size: 1.1em;
+  /*   border: solid 0.5pt; */
+  }
+  
+  .question {
+    text-align: right;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 1.1em;
+  /*   border: solid 0.5pt; */
+    padding-right: 20px;
+    width: 50%;
+    bottom: 8px
+  }
+  
+  
+  
+  
+  input[type=text], input[type=number], input[type=email] {
+    width: 70%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  input[type=text]:focus {
+  /*   border: 3px solid red; */
+    background: dodgerblue;
+    opacity: 0.9;
+  }
+  
+  ::placeholder {
+    font-size: 1.1em;
+  }
+  
+  select {
+    position: relative;
+    font-size: 0.9em;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+  
+  #submit {
+    background-color: #0089de;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+  
+  #textarea {
+    width: 75%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      text-align: center;
+      font-size: 0.9em;
+  }
+    .container {
+      font-size: 0.8em;
+      height: 100%;
+  /*     display: flex; */
+      background: white;
+  /*     flex-wrap: wrap; */
+      align-content: start;
+      margin: 0px 10% 50px 10%;
+    }
+    
+    .item1, .item2, .item3 {
+      box-sizing: border-box;
+      text-align: left;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+    }
+    
+    .item3 {
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+    }
+    
+    .question {
+      text-align: left;
+      justify-content: center;
+  /*   position: relative; */
+      box-sizing: border-box;
+      font-size: 1.1em;
+  /*   border: solid 0.5pt; */
+      padding: 5px 5px 0px 10px;
+      width: 100%;
+  }
+    
+    label {
+  /*   font-size: 1.1em; */
+    display: block;
+    padding-left: 0px;
+  }
+  
+  input {
+      float: left;
+      margin-left: 5px;
+      padding: 0px;
+      margin-right: 7px;
+  }
+    
+    #textarea {
+    width: 100%;
+  }
+    
+    #submit {
+      justify-content: center;
+  }
+  
+  }
