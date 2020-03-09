@@ -11,16 +11,15 @@
 <body>
 
     <header>
-        <h1 id="title">Australian Local Resident Survey Form</h1>
+        <h1 id="title">Australian resident survey form</h1>
+        <p id="description">Where in Sydney would you live if money wasn't an option? We want to hear from
+            the locals about their dream suburb.</p>
     </header>
 
+    <hr>
     <main>
         <form id="survey-form" action="/submit-form">
             <div class="container">
-                <div>
-                    <p id="description">Where in Sydney would you live if money wasn't an option? We want to hear from
-                        the locals about their dream suburb.</p>
-                </div>
                 <div class="item1"><label for="name" id="name-label">* Name: </label></div>
                 <div class="item2"><input id="name" type="text" placeholder="Enter your Name" required></div>
 
@@ -53,7 +52,7 @@
                 <div class="item2"><input id="email" type="email" placeholder="Enter your Email Address" required></div>
 
                 <div class="question">
-                    <p>Which option best describes your current situation?</p>
+                    <p>Employment status?</p>
                 </div>
 
                 <div class="item2">
@@ -155,9 +154,9 @@
 
 
                 <div class="item3"><button id="submit" type="submit">Submit</button></div><br>
-
+            
+            </div>          
         </form>
-        </div>
     </main>
 
     <footer>

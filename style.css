@@ -1,31 +1,42 @@
+*{
+    background: #FFFAFA;
+}
 body {
     font-family: helvetica, monospace;
-    background: #ed946d;
-  }
-  
-  #description {
-    background: white;
     text-align: center;
+}
+  
+#description {
+    
     position: relative;
-    padding: 5px 5% 5px 5%;
-    font-size: 1.1em;
-  }
-  
-  header {
     text-align: center;
-  }
+    padding: 5px 5% 5px 5%;
+    /* margin: 0 20% 0 10%; */
+    font-size: 1.1em;
+    /* background-color: aqua; */
+}
+  
+header {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+hr {
+    border: grey solid 1px;
+    margin: 20px 0px 40px 0px;
+}
   
   
-  .container {
+.container {
     height: 100%;
     display: flex;
-    background: white;
+    /* background: white; */
     flex-wrap: wrap;
     align-content: start;
     margin: 0px 15% 50px 15%;
-  }
+}
   
-  .item1 {
+.item1 {
   /*   background-color: dodgerblue; */
     width: 50%;
     text-align: right;
@@ -34,9 +45,9 @@ body {
   /*   margin: 5px; */
     padding: 15px 20px 10px;
   /*   border: solid 0.5pt; */
-  }
+}
   
-  .item2 {
+.item2 {
   /*   background-color: orangered; */
     width: 50%;
     text-align: start;
@@ -46,10 +57,10 @@ body {
     padding: 10px 0px 10px;
     font-size: 1.1em;
   /*   border: solid 0.5pt; */
-  }
+}
   
-  .item3 {
-    background-color: white;
+.item3 {
+    /* background-color: white; */
     width: 100%;
     text-align: center;
   /*   margin: 5px; */
@@ -57,9 +68,9 @@ body {
     padding: 0px 0px 0px;
     font-size: 1.1em;
   /*   border: solid 0.5pt; */
-  }
+}
   
-  .question {
+.question {
     text-align: right;
     position: relative;
     box-sizing: border-box;
@@ -68,38 +79,38 @@ body {
     padding-right: 20px;
     width: 50%;
     bottom: 8px
-  }
+}
   
   
   
   
-  input[type=text], input[type=number], input[type=email] {
+input[type=text], input[type=number], input[type=email] {
     width: 70%;
     padding: 5px 5px;
     box-sizing: border-box;
     border-radius: 5px;
-  }
+}
   
-  input[type=text]:focus {
+input[type=text]:focus {
   /*   border: 3px solid red; */
     background: dodgerblue;
     opacity: 0.9;
-  }
+}
   
-  ::placeholder {
+::placeholder {
     font-size: 1.1em;
-  }
+}
   
-  select {
+select {
     position: relative;
     font-size: 0.9em;
     width: 70%;
     box-sizing: border-box;
     padding: 5px 5px;
     border-radius: 5px;
-  }
+}
   
-  #submit {
+#submit {
     background-color: #0089de;
     border: none;
     border-radius: 10px;
@@ -111,9 +122,9 @@ body {
     font-size: 1em;
     margin: 10px 10px;
     cursor: pointer;
-  }
+}
   
-  #textarea {
+#textarea {
     width: 75%;
     height: 150px;
     padding: 12px 20px;
@@ -123,14 +134,15 @@ body {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: vertical;
-  }
+    font-family: helvetica, monospace;
+}
   
   
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     header {
       text-align: center;
       font-size: 0.9em;
-  }
+}
     .container {
       font-size: 0.8em;
       height: 100%;
@@ -164,27 +176,27 @@ body {
   /*   border: solid 0.5pt; */
       padding: 5px 5px 0px 10px;
       width: 100%;
-  }
+    }
     
     label {
   /*   font-size: 1.1em; */
     display: block;
     padding-left: 0px;
-  }
+    }
   
   input {
       float: left;
       margin-left: 5px;
       padding: 0px;
       margin-right: 7px;
-  }
+    }
     
     #textarea {
     width: 100%;
-  }
+    }
     
     #submit {
       justify-content: center;
-  }
+    }
   
-  }
+}
