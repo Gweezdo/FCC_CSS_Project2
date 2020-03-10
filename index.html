@@ -45,7 +45,7 @@
                 <br>
 
                 <div class="item1"><label for="currentPostcode" id="number-label">Current Postcode:</label></div>
-                <div class="item2"><input id="currentPostcode" type="text" placeholder="Enter your residential postcode" required></div>
+                <div class="item2"><input id="currentPostcode" type="number" placeholder="Enter your residential postcode" required></div>
 
                 <div class="item1"><label for="email" id="email-label">Email Address:</label></div>
                 <div class="item2"><input id="email" type="email" placeholder="Enter your Email Address" required></div>
@@ -55,19 +55,19 @@
                 </div>
 
                 <div class="item2">
-                    <input id="Defs" type="radio" name="moveStatus" value="Definitely" checked>
+                    <input id="Defs" type="radio" name="employmentStatus" value="Definitely" checked>
                     <label for="defs"><span><span></span></span>Full time</label><br>
 
-                    <input id="maybe" type="radio" name="moveStatus" value="Maybe">
+                    <input id="maybe" type="radio" name="employmentStatus" value="Maybe">
                     <label for="maybe"><span><span></span></span>Retired</label><br>
 
-                    <input id="no" type="radio" name="moveStatus" value="No">
+                    <input id="no" type="radio" name="employmentStatus" value="No">
                     <label for="no"><span><span></span></span>Unemployed</label><br>
 
-                    <input id="unsure" type="radio" name="moveStatus" value="Unsure">
+                    <input id="unsure" type="radio" name="employmentStatus" value="Unsure">
                     <label for="unsure"><span><span></span></span>Student</label><br>
 
-                    <input id="unsure" type="radio" name="moveStatus" value="Unsure">
+                    <input id="unsure" type="radio" name="employmentStatus" value="Unsure">
                     <label for="unsure"><span><span></span></span>Stay at home parent</label><br>
                 </div>
 
@@ -90,18 +90,20 @@
 
                 <div class="item2">
                     <input id="Defs" type="radio" name="moveStatus" value="Definitely" checked>
-                    <label for="defs">Very likely, I'm currently looking for accomodation</label><br>
+                    <label for="defs"><span><span></span></span>Very likely, I'm currently looking for accomodation</label><br>
 
                     <input id="maybe" type="radio" name="moveStatus" value="Maybe">
-                    <label for="maybe">Likely, but not actively looking for accomodation</label><br>
+                    <label for="maybe"><span><span></span></span>Likely, but not actively looking for accomodation</label><br>
 
                     <input id="no" type="radio" name="moveStatus" value="No">
-                    <label for="no">Not likely at all</label><br>
+                    <label for="no"><span><span></span></span>Not likely at all</label><br>
 
                     <input id="unsure" type="radio" name="moveStatus" value="Unsure">
-                    <label for="unsure">Not sure at this point in time</label>
+                    <label for="unsure"><span><span></span></span>Not sure at this point in time</label>
                     <br>
                 </div>
+
+                <div class="item3" id="space"></div>
 
                 <div class="question">
                     <p>Which items interest you the most about this subburb? (Check all that apply.)</p>
@@ -109,42 +111,44 @@
 
                 <div class="item2">
                     <input id="check1" type="checkbox" name="groupname" value="checkbox_1">
-                    <label for="check1">Lively bar scene and nightlife</label><br>
+                    <label for="check1"><span></span>Bar scene and nightlife</label><br>
 
                     <input id="check2" type="checkbox" name="groupname" value="checkbox_2">
-                    <label for="check2">Close proximity to the beach</label><br>
+                    <label for="check2"><span></span>Close proximity to the beach</label><br>
 
                     <input id="check3" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check3">Good schools</label><br>
+                    <label for="check3"><span></span>Good schools</label><br>
 
                     <input id="check4" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check4">Close proximity to work</label><br>
+                    <label for="check4"><span></span>Close proximity to work</label><br>
 
                     <input id="check5" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check5">Close to university</label><br>
+                    <label for="check5"><span></span>Close to university</label><br>
 
                     <input id="check6" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check6">Variety of restaurants</label><br>
+                    <label for="check6"><span></span>Variety of restaurants</label><br>
 
                     <input id="check7" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check7">Close to hiking trails</label><br>
+                    <label for="check7"><span></span>Close to hiking trails</label><br>
 
                     <input id="check8" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check8">Overlooking the city</label><br>
+                    <label for="check8"><span></span>Overlooking the city</label><br>
 
                     <input id="check9" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check9">Overlooking the ocean</label><br>
+                    <label for="check9"><span></span>Overlooking the ocean</label><br>
 
                     <input id="check10" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check10">Quiet neighbourhood</label><br>
+                    <label for="check10"><span></span>Quiet neighbourhood</label><br>
 
                     <input id="check11" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check11">Good neighbourhood to raise kids</label><br>
+                    <label for="check11"><span></span>Good neighbourhood to raise kids</label><br>
 
                     <input id="check12" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check12">Close to harbour</label>
+                    <label for="check12"><span></span>Close to harbour</label>
                 </div><br>
 
+                <div class="item3" id="space"></div>
+                
                 <div class="item3"><label id="comments">Leave further comments to motivate why you want to live in this
                         suburb.</label></div><br>
                 <br>
