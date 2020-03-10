@@ -27,8 +27,8 @@
                 <div class="item2"><input id="surname" type="text" placeholder="Enter your Surname" required></div>
 
                 <div class="item1"><label id="dropdown">* Age:</label></div>
-                <div class="item2"><select id="dropdown" name="age" size="1">
-                        <option id="grey" value="">Please select your age</option>
+                <div class="item2"><select id="dropdownMenu" name="age" size="1">
+                        <option id="grey" value="1">Please select your age</option>
                         <option value="15-19">15-19</option>
                         <option value="20-24">20-24</option>
                         <option value="25-29">25-29</option>
@@ -45,8 +45,7 @@
                 <br>
 
                 <div class="item1"><label for="currentPostcode" id="number-label">Current Postcode:</label></div>
-                <div class="item2"><input id="currentPostcode" type="number"
-                        placeholder="Enter your residential postcode" required></div>
+                <div class="item2"><input id="currentPostcode" type="text" placeholder="Enter your residential postcode" required></div>
 
                 <div class="item1"><label for="email" id="email-label">Email Address:</label></div>
                 <div class="item2"><input id="email" type="email" placeholder="Enter your Email Address" required></div>
@@ -57,19 +56,19 @@
 
                 <div class="item2">
                     <input id="Defs" type="radio" name="moveStatus" value="Definitely" checked>
-                    <label for="defs">Employed full time</label><br>
+                    <label for="defs"><span><span></span></span>Full time</label><br>
 
                     <input id="maybe" type="radio" name="moveStatus" value="Maybe">
-                    <label for="maybe">Retired</label><br>
+                    <label for="maybe"><span><span></span></span>Retired</label><br>
 
                     <input id="no" type="radio" name="moveStatus" value="No">
-                    <label for="no">Unemployed</label><br>
+                    <label for="no"><span><span></span></span>Unemployed</label><br>
 
                     <input id="unsure" type="radio" name="moveStatus" value="Unsure">
-                    <label for="unsure">Student</label><br>
+                    <label for="unsure"><span><span></span></span>Student</label><br>
 
                     <input id="unsure" type="radio" name="moveStatus" value="Unsure">
-                    <label for="unsure">Stay at home parent</label><br>
+                    <label for="unsure"><span><span></span></span>Stay at home parent</label><br>
                 </div>
 
                 <div class="item3">
@@ -79,10 +78,12 @@
                 <div class="item1"><label for="newSuburbName" id="newSuburb-label">Suburb name:</label></div>
                 <div class="item2"><input id="newSuburbName" type="text" placeholder="Suburb Name" required></div>
 
-                <div class="item1"><label for="number" id="newSuburb-label">Postcode:</label></div>
+                <div class="item1"><label for="number" id="newSuburb-label1">Postcode:</label></div>
                 <div class="item2"><input id="number" type="number" min="0" max="9999" placeholder="Postcode" required>
                 </div>
 
+                <div class="item3" id="space"></div>
+            
                 <div class="question">
                     <p>How likely are you to move to this subburb in the next 2 years?</p>
                 </div>
