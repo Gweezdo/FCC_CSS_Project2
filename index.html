@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <div class="mainContainer">
     <header>
         <h1 id="title">Australian resident survey form</h1>
         <p id="description">Where in Sydney would you live if money wasn't an option? We want to hear from
@@ -21,14 +21,14 @@
         <form id="survey-form" action="/submit-form">
             <div class="container">
                 <div class="item1"><label for="name" id="name-label">* Name: </label></div>
-                <div class="item2"><input id="name" type="text" placeholder="Enter your Name" required></div>
+                <div class="item2"><input id="name" type="text" placeholder="Enter your name" required></div>
 
                 <div class="item1"><label for="surname" id="surname-label">* Surname:</label></div>
-                <div class="item2"><input id="surname" type="text" placeholder="Enter your Surname" required></div>
+                <div class="item2"><input id="surname" type="text" placeholder="Enter your surname" required></div>
 
                 <div class="item1"><label id="dropdown">* Age:</label></div>
                 <div class="item2"><select id="dropdownMenu" name="age" size="1">
-                        <option id="grey" value="1">Please select your age</option>
+                        <option id="grey" value="" style="color: gray;">Please select your age</option>
                         <option value="15-19">15-19</option>
                         <option value="20-24">20-24</option>
                         <option value="25-29">25-29</option>
@@ -48,14 +48,14 @@
                 <div class="item2"><input id="currentPostcode" type="number" placeholder="Enter your residential postcode" required></div>
 
                 <div class="item1"><label for="email" id="email-label">Email Address:</label></div>
-                <div class="item2"><input id="email" type="email" placeholder="Enter your Email Address" required></div>
+                <div class="item2"><input id="email" type="email" placeholder="Enter your email address" required></div>
 
-                <div class="question">
+                <div class="item1 typeA">
                     <p>Employment status?</p>
                 </div>
 
                 <div class="item2">
-                    <input id="Defs" type="radio" name="employmentStatus" value="Definitely" checked>
+                    <input id="Defs" type="radio" name="employmentStatus" value="Definitely">
                     <label for="defs"><span><span></span></span>Full time</label><br>
 
                     <input id="maybe" type="radio" name="employmentStatus" value="Maybe">
@@ -84,12 +84,12 @@
 
                 <div class="item3" id="space"></div>
             
-                <div class="question">
+                <div class="item1 typeA">
                     <p>How likely are you to move to this subburb in the next 2 years?</p>
                 </div>
 
                 <div class="item2">
-                    <input id="Defs" type="radio" name="moveStatus" value="Definitely" checked>
+                    <input id="Defs" type="radio" name="moveStatus" value="Definitely">
                     <label for="defs"><span><span></span></span>Very likely, I'm currently looking for accomodation</label><br>
 
                     <input id="maybe" type="radio" name="moveStatus" value="Maybe">
@@ -105,7 +105,7 @@
 
                 <div class="item3" id="space"></div>
 
-                <div class="question">
+                <div class="item1 typeA">
                     <p>Which items interest you the most about this subburb? (Check all that apply.)</p>
                 </div>
 
@@ -158,13 +158,17 @@
                 <br>
 
 
-                <div class="item3"><button id="submit" type="submit">Submit</button></div><br>
+                <div class="item3 typeB"><button id="submit" type="submit">Submit</button></div><br>
             
             </div>          
         </form>
     </main>
+    </div>
+    
+    <hr id="footerHr">
 
     <footer>
+        <p>Developed by Zjak Theron</p>
     </footer>
 
 
