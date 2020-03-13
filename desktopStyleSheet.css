@@ -27,7 +27,6 @@ body {
 header {
   text-align: center;
   padding: 2.0rem 20.0rem 1.0rem 20.0rem;
-  /* background: red; */
   margin: 0 1.0rem;
 }
 
@@ -39,7 +38,6 @@ header #title {
 }
 
 header #description {
-  /* position: relative; */
   padding: 0.5rem 0rem 0.5rem 0rem;
   font-size: 2.0rem;
   line-height: 2.2rem;
@@ -60,7 +58,6 @@ hr {
   flex-wrap: wrap;
   align-content: start;
   margin: 0rem 2.0rem 0rem 2.0rem;
-  /* background-color: orchid; */
 }
 
 .item1,
@@ -73,20 +70,17 @@ hr {
   width: 50%;
   text-align: right;
   padding: 2.8rem 2.0rem 1.0rem 0rem;
-  /* background-color: orangered; */
   font-weight: 500;
 }
 
 .item2 {
-  /* background-color: orangered; */
   width: 50%;
   text-align: start;
   justify-content: center;
-  padding: 2.0rem 0rem 1.0rem 0rem;
+  padding: 1.0rem 0rem 0rem 0rem;
 }
 
 .item3 {
-  /* background-color: crimson; */
   width: 100%;
   text-align: center;
 }
@@ -112,8 +106,12 @@ input:focus::-webkit-input-placeholder {
 }
 
 #space {
-  padding: 0 0 5.0rem 0;
+  padding: 0 0 4.0rem 0;
 }
+
+#test1{
+    background-color: skyblue;
+  }
 
 .typeA {
   text-align: right;
@@ -121,7 +119,6 @@ input:focus::-webkit-input-placeholder {
   box-sizing: border-box;
   padding: 2.5rem 2.0rem;
   width: 50%;
-  /* bottom: 8rem */
 }
 
 .typeB{
@@ -141,12 +138,13 @@ input[type="email"],
   font-family: Helvetica, monospace;
   font-weight: 400;
   height: 4.0rem;
-  /* padding-top: 30rem; */
   line-height: 2.0rem;
   border: 0.1rem solid grey;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
   outline: none;
   color: white;
   background-color: rgb(0, 128, 255);
@@ -188,7 +186,6 @@ input[type="radio"]:not(old) + label > span {
   vertical-align: bottom;
 }
 
-/* input[type=checkbox]:not(old) + label > span, */
 input[type="radio"]:not(old):checked + label > span > span {
   display: block;
   width: 1.0rem;
@@ -207,7 +204,6 @@ input[type="checkbox"]:not(old) + label > span {
   border-radius: 0.5rem;
   background: white;
   vertical-align: bottom;
-  /* cursor: pointer; */
 }
 
 input[type="checkbox"]:not(old):checked + label > span:before {
@@ -226,17 +222,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/**************/
-select {
-  position: relative;
-  font-size: 2.0rem;
-  line-height: 1.0rem;
-  /* width: 70%; */
-  box-sizing: border-box;
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.5rem;
-}
-/******************/
 
 #submit {
   background-color: rgb(0, 128, 255);
@@ -264,7 +249,6 @@ select {
   box-sizing: border-box;
   border: 0.1rem solid rgb(0, 128, 255);
   border-radius: 0.4rem;
-  /* background-color: #f8f8f8; */
   font-size: 1.6rem;
   resize: vertical;
   font-family: helvetica, monospace;
@@ -284,17 +268,13 @@ footer {
   height: 4.8rem;
   width: 100%;
   background-color: #fffafa;
-  /* z-index: 99; */
-  /* border: brown solid 0.1rem; */
   padding: 0;
   margin: 0;
-  /* margin-top: -4.8rem; */
   clear: both;
 }
 
 footer p {
   width: 100%;
-  /* padding: 0 1.5rem; */
   background-color: #fffafa;
   bottom: 0;
   font-size: 1.8rem;
@@ -303,78 +283,4 @@ footer p {
   padding-top: 1.6rem;
 }
 
-@media only screen and (max-width: 60.0rem) {
-  header {
-    text-align: center;
-    /* font-size: 0.9em; */
-  }
 
-  header #title {
-    font-size: 2.8rem;
-    line-height: 3.2rem;
-  }
-
-  header #description {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
-
-  main {
-    font-size: 1.6rem;
-  }
-
-  .container {
-    height: 100%;
-    align-content: start;
-    margin: 0rem 10% 5.0rem 10%;
-  }
-
-  .item1,
-  .item2,
-  .item3 {
-    box-sizing: border-box;
-    text-align: left;
-    width: 100%;
-    padding: 0.5rem 0.5rem 0.5rem 1.0rem;
-  }
-
-  .item3 {
-    background-color: crimson;
-    text-align: center;
-    width: 100%;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  }
-/****************/
-  .question {
-    text-align: left;
-    justify-content: center;
-    /*   position: relative; */
-    box-sizing: border-box;
-    font-size: 1rem;
-    /*   border: solid 0.5pt; */
-    padding: 0.5rem 0.5rem 0rem 1.0rem;
-    width: 100%;
-  }
-/********************/
-
-  label {
-    /*   font-size: 1.1em; */
-    display: block;
-    padding-left: 0rem;
-  }
-
-  input {
-    float: left;
-    margin-left: 0.5rem;
-    padding: 0rem;
-    margin-right: 0.7rem;
-  }
-
-  #textarea {
-    width: 100%;
-  }
-
-  #submit {
-    justify-content: center;
-  }
-}

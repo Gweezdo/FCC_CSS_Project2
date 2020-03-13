@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktopStyleSheet.css">
+    <link rel="stylesheet" href="tabletStyleSheet.css">
+    <link rel="stylesheet" href="mobileStyleSheet.css">
     <title>Survey form for Australians, to determine their ideal suburb of residence</title>
 </head>
 
@@ -42,13 +44,14 @@
                         <option value="65+">65+</option>
                     </select>
                 </div>
-                <br>
 
                 <div class="item1"><label for="currentPostcode" id="number-label">Current Postcode:</label></div>
                 <div class="item2"><input id="currentPostcode" type="number" placeholder="Enter your residential postcode" required></div>
 
                 <div class="item1"><label for="email" id="email-label">Email Address:</label></div>
                 <div class="item2"><input id="email" type="email" placeholder="Enter your email address" required></div>
+
+                <div class="item3" id="space"></div>
 
                 <div class="item1 typeA">
                     <p>Employment status?</p>
@@ -90,13 +93,13 @@
 
                 <div class="item2">
                     <input id="Defs" type="radio" name="moveStatus" value="Definitely">
-                    <label for="defs"><span><span></span></span>Very likely, I'm currently looking for accomodation</label><br>
+                    <label for="defs" id="test1"><span><span></span></span>Very likely, I'm currently looking for accomodation</label><br>
 
                     <input id="maybe" type="radio" name="moveStatus" value="Maybe">
-                    <label for="maybe"><span><span></span></span>Likely, but not actively looking for accomodation</label><br>
+                    <label for="maybe" ><span><span></span></span>Likely, but not actively looking for accomodation</label><br>
 
                     <input id="no" type="radio" name="moveStatus" value="No">
-                    <label for="no"><span><span></span></span>Not likely at all</label><br>
+                    <label for="no" ><span><span></span></span>Not likely at all</label><br>
 
                     <input id="unsure" type="radio" name="moveStatus" value="Unsure">
                     <label for="unsure"><span><span></span></span>Not sure at this point in time</label>
@@ -149,11 +152,9 @@
 
                 <div class="item3" id="space"></div>
                 
-                <div class="item3"><label id="comments">Leave further comments to motivate why you want to live in this
-                        suburb.</label></div><br>
+                <div class="item3"><label id="comments">Leave further comments to motivate why you want to live in this suburb.</label></div><br>
                 <br>
-                <div class="item3"><textarea id="textarea" name="subject" placeholder="Comments.."
-                        style="height:200px"></textarea></div><br>
+                <div class="item3"><textarea id="textarea" name="subject" placeholder="Comments.." style="height:200px"></textarea></div><br>
                 <br>
                 <br>
 
