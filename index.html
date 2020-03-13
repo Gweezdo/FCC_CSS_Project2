@@ -52,27 +52,39 @@
                 <div class="item2"><input id="email" type="email" placeholder="Enter your email address" required></div>
 
                 <div class="item3" id="space"></div>
-
+                
                 <div class="item1 typeA">
                     <p>Employment status?</p>
                 </div>
 
                 <div class="item2">
-                    <input id="Defs" type="radio" name="employmentStatus" value="Definitely">
-                    <label for="defs"><span><span></span></span>Full time</label><br>
+                    <label for="fullTime" class="box1">Full time
+                        <input id="fullTime" type="radio" name="employmentStatus" value="Full-time">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="maybe" type="radio" name="employmentStatus" value="Maybe">
-                    <label for="maybe"><span><span></span></span>Retired</label><br>
+                    <label for="retired" class="box1">Retired
+                        <input id="retired" type="radio" name="employmentStatus" value="retired">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="no" type="radio" name="employmentStatus" value="No">
-                    <label for="no"><span><span></span></span>Unemployed</label><br>
+                    <label for="unemployed" class="box1">Unemployed
+                        <input id="unemployed" type="radio" name="employmentStatus" value="unemployed">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="unsure" type="radio" name="employmentStatus" value="Unsure">
-                    <label for="unsure"><span><span></span></span>Student</label><br>
+                    <label for="student" class="box1">Student
+                        <input id="student" type="radio" name="employmentStatus" value="student">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="unsure" type="radio" name="employmentStatus" value="Unsure">
-                    <label for="unsure"><span><span></span></span>Stay at home parent</label><br>
+                    <label for="parent" class="box1">Stay at home parent
+                        <input id="parent" type="radio" name="employmentStatus" value="parent">
+                        <span class="radioChk"></span>
+                    </label>
                 </div>
+
+                <div class="item3" id="space"></div>
 
                 <div class="item3">
                     <p>What is the name and post code of you dream Sydney subburb?</p>
@@ -92,18 +104,26 @@
                 </div>
 
                 <div class="item2">
-                    <input id="Defs" type="radio" name="moveStatus" value="Definitely">
-                    <label for="defs" id="test1"><span><span></span></span>Very likely, I'm currently looking for accomodation</label><br>
+                    <label for="defs" class="box1">Very likely, I'm currently looking for accomodation
+                        <input id="defs" type="radio" name="moveStatus" value="Definitely">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="maybe" type="radio" name="moveStatus" value="Maybe">
-                    <label for="maybe" ><span><span></span></span>Likely, but not actively looking for accomodation</label><br>
+                    <label for="maybe" class="box1">Likely, but not actively looking for accomodation
+                        <input id="maybe" type="radio" name="moveStatus" value="Maybe">
+                        <span class="radioChk"></span>
+                    </label>
 
-                    <input id="no" type="radio" name="moveStatus" value="No">
-                    <label for="no" ><span><span></span></span>Not likely at all</label><br>
-
-                    <input id="unsure" type="radio" name="moveStatus" value="Unsure">
-                    <label for="unsure"><span><span></span></span>Not sure at this point in time</label>
-                    <br>
+                    <label for="no" class="box1">Not likely at all
+                        <input id="no" type="radio" name="moveStatus" value="No">
+                        <span class="radioChk"></span>
+                    </label>
+                    
+                    <label for="unsure" class="box1">Not sure at this point in time
+                        <input id="unsure" type="radio" name="moveStatus" value="Unsure">
+                        <span class="radioChk"></span>
+                    </label>
+                
                 </div>
 
                 <div class="item3" id="space"></div>
@@ -113,41 +133,65 @@
                 </div>
 
                 <div class="item2">
-                    <input id="check1" type="checkbox" name="groupname" value="checkbox_1">
-                    <label for="check1"><span></span>Bar scene and nightlife</label><br>
+                    <label for="check1" class="box1">Bar scene and nightlife
+                        <input id="check1" type="checkbox" name="groupname" value="checkbox_1">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check2" type="checkbox" name="groupname" value="checkbox_2">
-                    <label for="check2"><span></span>Close proximity to the beach</label><br>
+                    <label for="check2" class="box1">Close proximity to the beach
+                        <input id="check2" type="checkbox" name="groupname" value="checkbox_2">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check3" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check3"><span></span>Good schools</label><br>
+                    <label for="check3" class="box1">Good schools
+                        <input id="check3" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check4" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check4"><span></span>Close proximity to work</label><br>
+                    <label for="check4" class="box1"> Close proximity to work
+                        <input id="check4" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check5" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check5"><span></span>Close to university</label><br>
+                    <label for="check5" class="box1">Close to university
+                        <input id="check5" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check6" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check6"><span></span>Variety of restaurants</label><br>
+                    <label for="check6" class="box1">Variety of restaurants
+                        <input id="check6" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check7" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check7"><span></span>Close to hiking trails</label><br>
+                    <label for="check7" class="box1">Close to hiking trails
+                        <input id="check7" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check8" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check8"><span></span>Overlooking the city</label><br>
+                    <label for="check8" class="box1">Overlooking the city
+                        <input id="check8" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check9" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check9"><span></span>Overlooking the ocean</label><br>
+                     <label for="check9" class="box1">Overlooking the ocean
+                        <input id="check9" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check10" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check10"><span></span>Quiet neighbourhood</label><br>
+                    <label for="check10" class="box1">Quiet neighbourhood
+                        <input id="check10" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check11" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check11"><span></span>Good neighbourhood to raise kids</label><br>
+                    <label for="check11" class="box1">Good neighbourhood to raise kids
+                        <input id="check11" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>
 
-                    <input id="check12" type="checkbox" name="groupname" value="checkbox_3">
-                    <label for="check12"><span></span>Close to harbour</label>
+                    <label for="check12" class="box1">Close to harbour
+                        <input id="check12" type="checkbox" name="groupname" value="checkbox_3">
+                        <span class="checkChk"></span>
+                    </label>    
                 </div><br>
 
                 <div class="item3" id="space"></div>

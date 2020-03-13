@@ -107,11 +107,24 @@ input:focus::-webkit-input-placeholder {
 
 #space {
   padding: 0 0 4.0rem 0;
+
 }
 
-#test1{
-    background-color: skyblue;
-  }
+.box1{
+  /* background-color: skyblue; */
+  display: block;
+  position: relative;
+  padding: 1.5rem 0 0 3.0rem;
+  margin: 0em;
+}
+
+.box1 input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
 .typeA {
   text-align: right;
@@ -154,61 +167,84 @@ input[type="number"]:focus {
   font-size: 1.8rem;
 }
 
-input[type="checkbox"],
-input[type="radio"]{
+/* input[type="checkbox"]{
   cursor: pointer;
-}
+} */
 
-input[type="checkbox"]:not(old),
+/* input[type="checkbox"]:not(old),
 input[type="radio"]:not(old) {
   width: 3.0rem;
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  opacity: 0;
-}
+  opacity: 1;
+} */
 
-input[type="checkbox"]:not(old) + label,
+/* input[type="checkbox"]:not(old) + label,
 input[type="radio"]:not(old) + label {
   display: inline-block;
   margin-left: -3.0rem;
   line-height: 3.0rem;
-}
+} */
 
-input[type="radio"]:not(old) + label > span {
-  display: inline-block;
+.radioChk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: inline-block; */
   width: 1.8rem;
   height: 1.8rem;
-  margin: 0.6rem 1.0rem 0.6rem 0rem;
+  margin: 1.5rem 1.0rem 1rem 0rem;
   border: 0.1rem solid black;
   border-radius: 1.0rem;
   background: white;
   vertical-align: bottom;
 }
 
-input[type="radio"]:not(old):checked + label > span > span {
-  display: block;
+.checkChk:hover,
+.radioChk:hover{
+  cursor: pointer;
+}
+
+.checkChk::after,
+.radioChk:after{
+  content: "";
+  position: absolute;
+  /* display: none; */
+}
+
+
+.box1 .radioChk:after {
+  display: none;
   width: 1.0rem;
   height: 1.0rem;
   margin: 0.4rem 0.4rem;
   border-radius: 0.6rem;
   background: rgb(0, 128, 255);
 }
+.box1 input:checked ~ .checkChk:after,
+.box1 input:checked ~ .radioChk:after {
+  display: block;
+}
 
-input[type="checkbox"]:not(old) + label > span {
-  display: inline-block;
+
+.checkChk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: inline-block; */
   width: 1.8rem;
   height: 1.8rem;
-  margin: 0.6rem 1.0rem 0.6rem 0.5rem;
+  margin: 1.5rem 1.0rem 1rem 0rem;
   border: 0.1rem solid black;
   border-radius: 0.5rem;
   background: white;
   vertical-align: bottom;
 }
 
-input[type="checkbox"]:not(old):checked + label > span:before {
+.checkChk::after {
   content: "✓";
-  display: block;
+  display: none;
   width: 1.5rem;
   color: rgb(0, 128, 255);
   font-size: 1.8rem;
